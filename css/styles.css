@@ -3,51 +3,96 @@ Padding: 0;
 Margin: 0;
 box-sizing: border-box;
 }
-body{
+
+body {
 font-size: 100%;
+background-color: #F2B705;
 }
-#wrapper{
+
+#wrapper {
 width: 940px;
 /*height: 940px;*/
 /*background-color: beige;*/
 margin: 0 auto 0 auto;
 }
-header{
+
+header { 
 /*background-color: #3C038C;*/
 width: 940px;
 height: 150px;
 }
-header a{
+
+header a {
 float: right;
 height: 147px;
 }
-#hero{
+
+#hero {
 width: 940px;
 height: 400px;
 background-color: aquamarine;
 overflow: hidden;
 margin-bottom: 20px;
 }
-main{
+
+main {
 width: 460px;
 height: 660px;
 background-color: orangered;
 float: left;
 }
-aside{
+
+aside {
 width: 460px;
 height: 660px;
 background-color: aqua;
 float: right;
 overflow: hidden;
 }
-main, aside{
+
+main, aside {
 margin-bottom: 20px;
 }
-footer{
+
+footer {
 width: 940px;
 height: 50px;
 margin-top: 20px;
 background-color: cadetblue;
 clear: both;
+}
+
+
+/*++++++++++++Forms styling++++++++++++*/
+
+form{
+max-width: 460px;
+}
+
+fieldset{
+padding: 10px;
+}
+
+label {
+display: block;
+margin-bottom: 10px;
+}
+input {
+width: 100%;
+margin-bottom: 10px;
+height: 30px;    
+}
+
+/*following uses an attribute selector*/
+input[type="submit"]{
+width:auto;
+float: right;
+/*use with auto to conteract previously declared width*/
+}
+
+textarea{
+width: 100%;
+resize: none;
+height: 150px;
+margin-bottom: 10px;
 }
